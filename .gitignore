@@ -1,0 +1,2 @@
+#ignora archivos js en template
+00-template/*.js 
