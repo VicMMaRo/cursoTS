@@ -19,6 +19,7 @@
         fuerzas[fuerzas["superman"] = 100] = "superman";
         fuerzas[fuerzas["batman"] = 1] = "batman";
     })(fuerzas || (fuerzas = {}));
+    //tipamos ahora las variables de tipo fuerzas
     const fuerzaFlash = fuerzas.flash;
     const fuerzaSuperman = fuerzas.superman;
     const fuerzaBatman = fuerzas.batman;

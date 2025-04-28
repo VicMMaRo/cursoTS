@@ -22,17 +22,19 @@
     superman = 100,
     batman = 1
   }
-  const fuerzaFlash = fuerzas.flash;
-  const fuerzaSuperman = fuerzas.superman;
-  const fuerzaBatman = fuerzas.batman;
-  const fuerzaAcuaman = fuerzas.acuaman;
+
+  //tipamos ahora las variables de tipo fuerzas
+  const fuerzaFlash: fuerzas = fuerzas.flash;
+  const fuerzaSuperman: fuerzas = fuerzas.superman;
+  const fuerzaBatman: fuerzas = fuerzas.batman;
+  const fuerzaAcuaman: fuerzas = fuerzas.acuaman;
 
   // Retorno de funciones
   function activar_batiseñal():string{
     return 'activada';
   }
 
-  function pedir_ayuda():void{
+  function pedir_ayuda():void {
     console.log('Auxilio!!!');
   }
 
