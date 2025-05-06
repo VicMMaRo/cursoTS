@@ -24,7 +24,8 @@ separadores.sepLargo();
 //Creacios de type (Tipos)
 /**
  * Creació de un tipo
- * puede utulizar indistintamente ; ó , para separar las propieddades
+ * puede utulizar indistintamente ; ó , para separar las propieddades.
+ * Para usarlo una vez creado hacemos, por ejemplo con objetos, creamos el objeto y ponemos dos puntos (:) más el nombre del type. ejemplo : let miObj:Person = {}.
  */
 
 //OJO: mirar si se puede relacionar el tyoe Person con el objeto person1??
@@ -33,13 +34,13 @@ type Person = {
   surName: string,
   age: number;
   hasCar: boolean;
-  carColor?: string;//parámero opcional por si no tiene coche
-  getColor: () => string,//indica que la función retorna un string
+  carColor: (string|null);//retorna string si tiene color de coche ó null si no lo tiene
+  getColor: () => (string|null),//indica que la función retorna un string ó un null
 }
 
 
 //creamos un objeto de tipo Person
-let person1 = {
+let person1: Person = {
   name: 'Sofia',
   surName: 'Cuntin Paz',
   age: 32,
