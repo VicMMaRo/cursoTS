@@ -77,7 +77,9 @@ const apocalipsis: Apocalipsis = {
 }
 
 // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
-let mystique;
+
+//tipamos la variable para que pueda ser de un tipo o del otro
+let mystique: Charles | Apocalipsis;
 
 mystique = charles;
 console.log(mystique);
