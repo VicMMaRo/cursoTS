@@ -35,7 +35,7 @@ const bumblebee: Vehiculo = {
 //creamos el tipo Villanos y se lo asignamos al array de objetos villanos
 type Villanos = {
   nombre:string,
-  edad: number | undefined,//mejor no usar undefined y usar null en su lugar. Que undefined siempre sea un valor devuelto por js y no por el programador
+  edad: (number | undefined),//mejor no usar undefined y usar null en su lugar. Que undefined siempre sea un valor devuelto por js y no por el programador
   mutante: boolean
 }
 
@@ -85,7 +85,6 @@ mystique = charles;
 console.log(mystique);
 mystique = apocalipsis;
 console.log(mystique);
-
 
 })();
 

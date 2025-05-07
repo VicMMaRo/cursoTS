@@ -38,6 +38,7 @@
         miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
     };
     // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
+    //tipamos la variable para que pueda ser de un tipo o del otro
     let mystique;
     mystique = charles;
     console.log(mystique);
