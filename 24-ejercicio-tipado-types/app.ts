@@ -8,7 +8,7 @@ import * as separadores from './separadores.js'
     modelo: string,
     antibalas: boolean,
     pasajeros: number,
-    disparar?: () => string | null
+    disparar?: () => void
   }
 
   // Objetos: le asignamos el type vehículo
