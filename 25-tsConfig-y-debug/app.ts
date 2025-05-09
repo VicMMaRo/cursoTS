@@ -21,7 +21,7 @@ import * as separadores from './separadores.js'
   /**
    * para ello vamos al archivo tsconfig.json descomentamos la linea "sourceMap": true. Ahora nos genera un archivo js.map donde ahora si podemos ver las líneas del archivo ts
    */
-  console.log("Hola, estoy en la línea 24 del archivo ts. Si te fijas en el archivo js generado estoy en la linea 22 ");
+  console.log("Hola, estoy en la línea 24 del archivo ts. Si te fijas en el archivo js generado estoy en la linea 22");
 })();
 
 
