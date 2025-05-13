@@ -28,8 +28,9 @@ let persona3:Persona = {
 let arrPersonas:MyArr = [persona1, persona2, persona3];
 console.log({arrPersonas});
 //ahora lo recoremos con un for of para mostrar las personas
+console.log("for que muestra edad");
 for(const persona of arrPersonas){
-  console.log({persona.edad});//
+  console.log(persona.edad);
 }
 
 separadores.sepLargo();
@@ -40,9 +41,34 @@ separadores.sepLargo();
     hijos: ['victor', 'lucas', 'pedro', 'sara', 'laura'],
   }
 
-  for(const clave in familia){
-    console.log({clave});
+  //creamos variables con let para desestructurar
+  let {padre, madre, hijos} = familia;
+
+  console.log(padre);
+  console.log(madre);
+
+  //iteramos con un for in sobre el array hijos para sacar los valores de cada posición
+  for(const clave in hijos){
+    const valor = hijos[clave];
+    console.log(valor);
   }
+
+  //para casa hacerlo con un bucle anidado
+  //un ejemplo encontrado con ia
+  for (const clave in familia) {
+    const valor = familia[clave as keyof typeof familia];
+    
+    if (clave === 'hijos' && Array.isArray(valor)) {
+        // Si la propiedad es 'hijos' y es un array, lo recorremos
+        console.log(`Los hijos son:`);
+        for (const hijo of valor) {
+            console.log(`- ${hijo}`);
+        }
+    } else {
+        // Para otras propiedades (padre, madre)
+        console.log(`${clave}: ${valor}`);
+    }
+}
 })();
 
 
