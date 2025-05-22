@@ -1,2 +1,4 @@
 #ignora archivos js en template
 00-template/*.js 
+node_modules/
+package-lock.json
